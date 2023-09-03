@@ -1,44 +1,47 @@
-.caption{ 
-    position: absolute; 
-    top: 45%; 
-    left: 0; 
-    width: 100%; 
-   } 
-button{border-radius: 10px;color: aliceblue;background-color:aqua;}
-h1{color: aliceblue;}
-h3{color: aliceblue;}
-.caption1{ 
-    position: absolute; 
-    top: 0%; 
-    left: 10%; 
-    width: 100%; 
-   } 
-.caption2{ 
-   position: absolute; 
-   top: 0%; 
-   left: 500PX; 
-   width: 50%; 
-  } 
-.caption3{ 
-   position: absolute; 
-   top: 0%; 
-   left: 600PX; 
-   width: 40%; 
-  } 
-.caption4{ 
-    position: absolute; 
-    top: 0%; 
-    left: 750PX; 
-    width: 100%; 
-   } 
-.caption5{ 
-    position: absolute; 
-    top: 0%; 
-    left: 1000PX; 
-    width: 100%; 
-   } 
-
- 
-
-
-
+.caption {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+}
+button {
+  border-radius: 10px;
+  color: aliceblue;
+  background-color: aqua;
+}
+h1 {
+  color: aliceblue;
+}
+h3 {
+  color: aliceblue;
+}
+.caption1 {
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  width: 100%;
+}
+.caption2 {
+  position: absolute;
+  top: 0%;
+  left: 500px;
+  width: 50%;
+}
+.caption3 {
+  position: absolute;
+  top: 0%;
+  left: 600px;
+  width: 40%;
+}
+.caption4 {
+  position: absolute;
+  top: 0%;
+  left: 750px;
+  width: 100%;
+}
+.caption5 {
+  position: absolute;
+  top: 0%;
+  left: 1000px;
+  width: 100%;
+}

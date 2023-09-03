@@ -9,83 +9,101 @@
         <p class="margen">
             Iniciando git
         </p>
-        <div class="margen"> 1.Poner nombre de usuario <br> 
-            git config --global user.name<br>
-            Ej: git config --global user.name "Emerson Santos"<br><br>
-            2. Poner el nombre de usuario<br>
-            git config --global user.email<br>
-            Ej: git config --global user.email emersonsantosolivares@outlook.es<br><br>
-            3. Elegir el editor de codigo<br>
-            git config --global core.editor<br>
-            Ej: git config --global core.editor "code --wait"<br><br>
-            4. Ver la configuracion global<br>
-            git config --global -e<br><br>
-            5. Adecuar Git al Sistema Operativo<br>
-            git config --global core.autocrlf<br>
-            Ej: Para linux y Mac = git config --global core.autocrlf input<br>
-            Para windows = git config --global core.autocrlf true<br><br>
-            6. Para mostrar todos los comandos disponibles<br>
-            git config --global -h <br><br>
-            7. Como añadir Git en el proyecto<br>
-            Nos dirigimos a la carpeta destino luego ingresamos el comando<br>
-            git init<br><br>
-            8. Entrando a git dentro de la carpeta<br>
-            cd .git<br><br>
-            9. Abriendo la carpeta donde nos encontramos con el editor de codigo<br>
-            code .<br><br>
-        </div>
-        <div class="margen">Usando Git<b>
-            1. Ver el estado actual de las los archivos<br>
-            git status<br><br>
-            2. Agregar al historial los archivos modificados<br>
-            git add<br>
-            Ej: git add ingles.html "base de datos.html"<br><br>
-            3. Agregando los archivos ya agregados al historial(A la vez darle un nombre a estos cambios)<br>
-            git commit -n<br>
-            git commit<br>
-            Ej: git commit -n "Cambios del dia 20 de febrero"<br><br>
-            Ej2: git commit <br><br>
-            4. Quitando del historial una modificacion ya agregada<br>
-            git restore --staged <br>
-            Ej: git restore --staged "base de datos.html"<br><br>
-            5. Recuperando archivo ya eliminado<br>
-            git restore<br>
-            Ej: git restore "base de datos.html" <br><br>
-            6. Moviendo o cambiar el nombre de un archivo<br>
-            Ej: git mv "base de datos.html" "base de datos1.html"  (cambiandole el nombre)<br>
-            Ej2: git mv "base de datos.html" /desktop  (Moviendolo el archivo) <br><br>
-            7. Como ignorar los cambios de un archivo <br>
-            Creando un archivo con el editor de codigo que se llame .gitignore<br>
-            donde podamos ingresar el nombre de los archivos(o carpetas) que queramos ignorar<br><br>
-            8. Como ver los ultimos cambios no guardados especificamente <br>
-            git diff<rb><rb>
-            9. Como ver los cambios ya agregados en el historial pero aun no en el commit<br>
-            git diff --staged<br><br>
-            10. Como ver lo guardado en commit por orden(con la "q" regreso al menu anterior<br>
-            git log --oneline<br><br>
-            11. Como ver en que rama me encuentro<br>
-            git branch <br><br>
-            12. Como crear otra rama<br>
-            git checkout -b<br><br>
-            Ej: git checkout -b feactures/nombre-de-la-funcionalidad<br>
-            Ej2: git checkout -b ramab<br><br>
-            13. Modificando la rama main usando otra rama(Hay que primero estar ya dentro de la rama main)<br>
-            git merge <br>
-            Ej: git merge ramab<br><br>
-            14. Ver el codigo en la consola<br>
-            cat<br>
-            Ej: cat basededatos.html<br><br>
-            15. Agregando una directorio donde subir y descargar mis cambios<br>
-            git remote add origin https://github.com/EmersonSantosO/Materia.git<br><br>
-            16. Para agregar la rama con la cual estamos trabajando y a la vez creando una rama main<br>
-            git push -u origin main<br><br>
-            17. Como agregar una nueva rama sin necesidad de modificar la rama main<br>
-            git checkout -b rama-nueva<br><br>
-            18. Agregar la nueva rama al directorio sin tener que cambiar la rama main<br>
-            git push -u origin rama-nueva
-        </div>
+        <canvas id="myCanvas" width="500" height="500"></canvas>
+        <div class="container">
+            <div class="margen"> 1.Poner nombre de usuario <br>
+                git config --global user.name<br>
+                Ej: git config --global user.name "Emerson Santos"<br><br>
+                2. Poner el nombre de usuario<br>
+                git config --global user.email<br>
+                Ej: git config --global user.email
+                emersonsantosolivares@outlook.es<br><br>
+                3. Elegir el editor de codigo<br>
+                git config --global core.editor<br>
+                Ej: git config --global core.editor "code --wait"<br><br>
+                4. Ver la configuracion global<br>
+                git config --global -e<br><br>
+                5. Adecuar Git al Sistema Operativo<br>
+                git config --global core.autocrlf<br>
+                Ej: Para linux y Mac = git config --global core.autocrlf input<br>
+                Para windows = git config --global core.autocrlf true<br><br>
+                6. Para mostrar todos los comandos disponibles<br>
+                git config --global -h <br><br>
+                7. Como añadir Git en el proyecto<br>
+                Nos dirigimos a la carpeta destino luego ingresamos el comando<br>
+                git init<br><br>
+                8. Entrando a git dentro de la carpeta<br>
+                cd .git<br><br>
+                9. Abriendo la carpeta donde nos encontramos con el editor de
+                codigo<br>
+                code .<br><br>
+            </div>
+            <div class="margen">Usando Git<b>
+                    1. Ver el estado actual de las los archivos<br>
+                    git status<br><br>
+                    2. Agregar al historial los archivos modificados<br>
+                    git add<br>
+                    Ej: git add ingles.html "base de datos.html"<br><br>
+                    3. Agregando los archivos ya agregados al historial(A la vez
+                    darle un nombre a estos cambios)<br>
+                    git commit -n<br>
+                    git commit<br>
+                    Ej: git commit -n "Cambios del dia 20 de febrero"<br><br>
+                    Ej2: git commit <br><br>
+                    4. Quitando del historial una modificacion ya agregada<br>
+                    git restore --staged <br>
+                    Ej: git restore --staged "base de datos.html"<br><br>
+                    5. Recuperando archivo ya eliminado<br>
+                    git restore<br>
+                    Ej: git restore "base de datos.html" <br><br>
+                    6. Moviendo o cambiar el nombre de un archivo<br>
+                    Ej: git mv "base de datos.html" "base de datos1.html"
+                    (cambiandole el nombre)<br>
+                    Ej2: git mv "base de datos.html" /desktop (Moviendolo el
+                    archivo) <br><br>
+                    7. Como ignorar los cambios de un archivo <br>
+                    Creando un archivo con el editor de codigo que se llame
+                    .gitignore<br>
+                    donde podamos ingresar el nombre de los archivos(o carpetas)
+                    que queramos ignorar<br><br>
+                    8. Como ver los ultimos cambios no guardados especificamente
+                    <br>
+                    git diff<rb><rb>
+                            9. Como ver los cambios ya agregados en el historial
+                            pero aun no en el commit<br>
+                            git diff --staged<br><br>
+                            10. Como ver lo guardado en commit por orden(con la
+                            "q" regreso al menu anterior<br>
+                            git log --oneline<br><br>
+                            11. Como ver en que rama me encuentro<br>
+                            git branch <br><br>
+                            12. Como crear otra rama<br>
+                            git checkout -b<br><br>
+                            Ej: git checkout -b
+                            feactures/nombre-de-la-funcionalidad<br>
+                            Ej2: git checkout -b ramab<br><br>
+                            13. Modificando la rama main usando otra rama(Hay
+                            que primero estar ya dentro de la rama main)<br>
+                            git merge <br>
+                            Ej: git merge ramab<br><br>
+                            14. Ver el codigo en la consola<br>
+                            cat<br>
+                            Ej: cat basededatos.html<br><br>
+                            15. Agregando una directorio donde subir y descargar
+                            mis cambios<br>
+                            git remote add origin
+                            https://github.com/EmersonSantosO/Materia.git<br><br>
+                            16. Para agregar la rama con la cual estamos
+                            trabajando y a la vez creando una rama main<br>
+                            git push -u origin main<br><br>
+                            17. Como agregar una nueva rama sin necesidad de
+                            modificar la rama main<br>
+                            git checkout -b rama-nueva<br><br>
+                            18. Agregar la nueva rama al directorio sin tener
+                            que cambiar la rama main<br>
+                            git push -u origin rama-nueva
+                        </div>
+                    </div>
 
-
-
-    </body>
-</html>
+                </body>
+            </html>
